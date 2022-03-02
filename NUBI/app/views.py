@@ -9,3 +9,7 @@ def index(request):
 
 def index1(request):
     return HttpResponse('Another response')
+
+
+def index2(request):
+    return render(request, 'index.html')
