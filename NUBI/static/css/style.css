@@ -170,14 +170,12 @@ html {
 
 canvas {
   display: block;
-  vertical-align: bottom;
 }
 
 /* ---- stats.js ---- */
 
 .count-particles {
   background: #000022;
-
   position: absolute;
   top: 48px;
   left: 0;
@@ -198,7 +196,6 @@ canvas {
 
 #stats,
 .count-particles {
-  -webkit-user-select: none;
   margin-top: 5px;
   margin-left: 5px;
 }
