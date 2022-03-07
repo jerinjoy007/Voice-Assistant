@@ -19,7 +19,7 @@ particlesJS('particles-js',
         "value": 120,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 900
         }
       },
       "color": {
@@ -28,14 +28,14 @@ particlesJS('particles-js',
       "shape": {
         "type": "circle",
         "stroke": {
-          "width": 2,
+          "width": 1,
           "color": "#000000"
         },
         "polygon": {
           "nb_sides": 5
         },
         "image": {
-          "src": " ",
+          "src": "img/star.png",
           "width": 200,
           "height": 200
         }
@@ -51,7 +51,7 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 30,
+        "value": 5,
         "random": true,
         "anim": {
           "enable": false,

@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>particles.js</title>
-  <script src="https://kit.fontawesome.com/e25b852c87.js" 
-	crossorigin="anonymous"></script>
-  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-  <meta name="author" content="Jerin joy" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="{% static '/css/style.css'%}">
-  <link rel="stylesheet" href="{% static '/css/stylea.css'%}">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>NUBI</title>
+    <script
+      src="https://kit.fontawesome.com/e25b852c87.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="description"
+      content="particles.js is a lightweight JavaScript library for creating particles."
+    />
+    <meta name="author" content="Jerin joy" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" media="screen" href="{% static '/css/style.css'%}" />
+    <link rel="stylesheet" href="{% static '/css/stylea.css'%}" />
+  </head>
+  <body>
+    <!-- particles.js container -->
 
+    <div id="particles-js"></div>
+    <!-- scripts -->
+    <script src="{% static '/pro/particles.js'%}"></script>
+    <script src="{% static '/js/app.js'%}"></script>
 
-
-<!-- particles.js container -->
-
-<div id="particles-js"></div>
-<!-- scripts -->
-<script src="{% static '/pro/particles.js'%}"></script>
-<script src="{% static '/js/app.js'%}"></script>
-
-  <div class="container">
-    <input type="checkbox" id="share-toggle">
-    <label for="share-toggle">
-      <span class="span"  id="play-button"><i class="fas fa-share-alt"></i></span>
+    <div class="container">
+      <input type="checkbox" id="share-toggle" />
+      <label for="share-toggle">
+        <span class="span" id="play-button"
+          ><i class="fas fa-share-alt"></i
+        ></span>
       </label>
-     <div class="Food-list">	
-      <a href="#"><i class="fas fa-user-plus"></i></a>
-         <a href="#"><i class="fas fa-hotdog"></i></a>
-      <a href="#"><i class="fas fa-pizza-slice"></i></a>
-      <a href="#"><i class="fas fa-fish"></i></a>
-      <a href="#"><i class="fas fa-egg"></i></a>
-      <a href="#"><i class="fas fa-cookie"></i></a>
-      <a href="#"><i class="fas fa-bread-slice"></i></a>
-      <a href="#"><i class="fas fa-hamburger"></i></a>
-     </div>
-  </div>
-  <div style=" position: relative; top: -105%;  text-align: center; ">
-    <p aria-hidden="Paper">
-      <span data-text="N">N</span>
-      <span data-text="U">U</span>
-      <span data-text="B">B</span>
-      <span data-text="I">I</span>
-      <!--<span data-text="A">A</span>
+      <div class="Food-list">
+        <a href="#"><i class="fas fa-user-plus"></i></a>
+        <a href="#"><i class="fas fa-hotdog"></i></a>
+        <a href="#"><i class="fas fa-pizza-slice"></i></a>
+        <a href="#"><i class="fas fa-fish"></i></a>
+        <a href="#"><i class="fas fa-egg"></i></a>
+        <a href="#"><i class="fas fa-cookie"></i></a>
+        <a href="#"><i class="fas fa-bread-slice"></i></a>
+        <a href="#"><i class="fas fa-hamburger"></i></a>
+      </div>
+    </div>
+    <div style="position: relative; top: -105%; text-align: center">
+      <p aria-hidden="Paper">
+        <span data-text="N">N</span>
+        <span data-text="U">U</span>
+        <span data-text="B">B</span>
+        <span data-text="I">I</span>
+        <!--<span data-text="A">A</span>
       <span data-text="R">R</span>
       <span data-text="Y">Y</span>&nbsp;&nbsp;
       <span data-text="A">A</span>
@@ -57,9 +64,7 @@
       <span data-text="A">A</span>
 	  <span data-text="N">N</span>
 	  <span data-text="T">T</span>-->
-    
-  </p>
-  </div>
-
-</body>
+      </p>
+    </div>
+  </body>
 </html>
