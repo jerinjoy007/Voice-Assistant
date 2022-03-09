@@ -113,6 +113,7 @@ a {
 
 p span {
   display: inline-block;
+  padding-top: 25px;
   font-size: 75px;
   position: relative;
   transform-style: preserve-3d;
@@ -161,15 +162,18 @@ p span + span {
 @media (min-width: 30em) {
   p {
     font-size: 3em;
+    padding-top: 50px;
   }
 }
 @media (min-width: 40em) {
   p {
     font-size: 5em;
+    padding-top: 50px;
   }
 }
 @media (min-width: 60em) {
   p {
     font-size: 4em;
+    padding-top: 50px;
   }
 }
