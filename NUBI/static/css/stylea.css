@@ -153,6 +153,7 @@ p span + span {
 @media (min-width: 10em) {
   p {
     font-size: 2em;
+    padding-top: 50px;
   }
   p span::before,
   p span::after {
