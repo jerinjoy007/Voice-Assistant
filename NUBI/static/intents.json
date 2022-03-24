@@ -1,0 +1,17 @@
+{"intents":[
+    {"tag": "greeting",
+     "patterns":["Hi","Hey","Is anyone there?","Hello","Hay"],
+     "responses":["hello","hi","hi there"]
+    },
+    {"tag": "goodbye",
+     "patterns":["Bye","bey","See you later","Goodbye"],
+     "responses":["See you later","Have a nice day","Bye! Come back again"]
+    },
+    {"tag":"question",
+     "patterns":["what are you","who are you","what is your name"],
+     "responses":["i am nubi AI","Library assistance"]      
+    }
+    
+]
+
+}

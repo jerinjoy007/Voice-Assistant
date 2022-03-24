@@ -28,54 +28,30 @@
     <script src="{% static '/pro/particles.js'%}"></script>
     <script src="{% static '/js/app.js'%}"></script>
 
-    <!--<div class="container">
-      <input type="checkbox" id="share-toggle" />
-      <label for="share-toggle">
-        <span class="span" id="play-button"
-          >
-          <!--<i class="fas fa-share-alt"></i>
-        </span>
-      </label>
-      <div class="Food-list">
-        <a href="#"><i class="fas fa-user-plus"></i></a>
-        <a href="#"><i class="fas fa-hotdog"></i></a>
-        <a href="#"><i class="fas fa-pizza-slice"></i></a>
-        <a href="#"><i class="fas fa-fish"></i></a>
-        <a href="#"><i class="fas fa-egg"></i></a>
-        <a href="#"><i class="fas fa-cookie"></i></a>
-        <a href="#"><i class="fas fa-bread-slice"></i></a>
-        <a href="#"><i class="fas fa-hamburger"></i></a>
-      </div>
-    </div>-->
+     
     <div style="position: relative; top: -105%; text-align: center">
       <p aria-hidden="Paper">
         <span data-text="N">N</span>
         <span data-text="U">U</span>
         <span data-text="B">B</span>
         <span data-text="I">I</span>
-        <!--<span data-text="A">A</span>
-      <span data-text="R">R</span>
-      <span data-text="Y">Y</span>&nbsp;&nbsp;
-      <span data-text="A">A</span>
-      <span data-text="S">S</span>
-      <span data-text="S">S</span>
-      <span data-text="I">I</span>
-      <span data-text="S">S</span>
-      <span data-text="T">T</span>
-      <span data-text="A">A</span>
-	  <span data-text="N">N</span>
-	  <span data-text="T">T</span>-->
+        
       </p>
       
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div id="world"></div>
+<div id="world">
+ 
+</div>
 <div id="instructions"></span></div>
 
 <div id="credits">
   <p></p>
 </div>
-
+<form class="chat" action="{% url 'chat' %}" method="post">
+  {% csrf_token %}
+  <input type="submit" value="chat" name="chat">
+</form>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
  
@@ -91,6 +67,17 @@
   text-transform: uppercase;
   text-align : center;
   user-select: none;
+}
+.chat{
+  display: flex;
+  z-index:1;
+  top: -35%;
+  left: 50%;
+  position: relative;
+}
+.chat input {
+  color: aliceblue;
+  display: flex;
 }
 .lightInstructions {
   color:#993f4c;
@@ -122,8 +109,7 @@
 
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/OrbitControls.js"></script>
 
-<script>
-  
+<script> 
 //THREEJS RELATED VARIABLES 
 
 var scene, 
@@ -177,7 +163,7 @@ function init(){
   container = document.getElementById('world');
   container.appendChild(renderer.domElement);
   windowHalfX = WIDTH / 2;
-  windowHalfY = HEIGHT / 2;
+  windowHalfY = HEIGHT /2;
   window.addEventListener('resize', onWindowResize, false);
   document.addEventListener('mousemove', handleMouseMove, false);
   document.addEventListener('mousedown', handleMouseDown, false);
@@ -846,5 +832,8 @@ function rule3(v,vmin,vmax,tmin, tmax){
 </script>
 
     </div>
+
+
+
   </body>
 </html>

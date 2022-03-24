@@ -74,7 +74,7 @@ while(1):
                 if i['tag'] == tag:
                     print(Fore.GREEN + "chatBot: " + Style.RESET_ALL,
                           np.random.choice(i['responses']))
-                    #print("Did you say "+np.random.choice(i['responses']))
+                    print("Did you say "+np.random.choice(i['responses']))
                     SpeakText(np.random.choice(i['responses']))
 
     except sr.RequestError as e:
