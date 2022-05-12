@@ -16,7 +16,10 @@ input {
   display: none;
 }
 button {
-  display: none;
+  display: flex;
+  margin-left: 748px;
+  position: fixed;
+  border-radius: 55px;
 }
 #share-toggle {
   display: none;
@@ -178,3 +181,4 @@ p span + span {
     padding-top: 50px;
   }
 }
+ 
